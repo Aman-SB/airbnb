@@ -32,7 +32,7 @@ function handlePrice() {
     document.querySelector('.price').innerText = `${result.price.rate} ₹ / night`
     document.querySelector('#rate').innerText = `${result.rating}`
     document.querySelector('#rev').innerText = `${result.reviewsCount} reviews`
-    let price_cont = document.querySelector('.price-details');
+    let price_cont = document.querySelector('.price');
     let total = 0;
     for (let i = 0; i < result.price.priceItems.length; i++) {
         const div = document.createElement('div');
@@ -67,21 +67,21 @@ async function getRoomDetails() {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'f883b90791msha59eee7d63130abp1b6ef4jsn68f1a6a10240',
+            'X-RapidAPI-Key': '7d4218bc32msh94196761d68f2bep167d29jsn96aab689212e',
             'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
         }
     };
 
     try {
         const response = await fetch(url, options);
-        const result = await response.text();
-        console.log(result);
+        const nResult = await response.text();
+        console.log(nResult);
     } catch (error) {
         console.error(error);
     }
     
 }
-// getRoomDetails();
+getRoomDetails();
 
 
 // Creating a map object
@@ -141,3 +141,4 @@ function showBookingCostBreakdown(listing) {
     // Add the modal to the body
     document.body.appendChild(modal);
 }
+
