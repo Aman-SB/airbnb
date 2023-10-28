@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Inter&display=swap");
-* {
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Inter&display=swap');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
-.nav {
+.nav{
     padding: 0.75rem 1rem;
     display: flex;
     justify-content: space-between;
@@ -15,30 +15,30 @@
     align-items: center;
     margin: auto;
 }
-li {
+li{
     margin: 0 1rem;
 }
-.mid {
+.mid{
     margin-left: 5rem;
 }
-.profile-btn {
+.profile-btn{
     display: flex;
     background: #ffffff;
     border-radius: 35px;
     padding: 5px 10px;
     box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(162, 162, 162);
 }
-.end-cont {
+.end-cont{
     display: flex;
     list-style: none;
     align-items: center;
 }
 
-.search-cont {
+.search-cont{
     display: flex;
     align-self: center;
 }
-.search-cont > ul {
+.search-cont > ul{
     display: flex;
     list-style: none;
     align-items: center;
@@ -49,40 +49,41 @@ li {
     flex-wrap: wrap;
     font-weight: 600;
 }
-#search {
+#search{
     width: 35px;
 }
-.search-items::after {
-    content: "|";
+.search-items::after{
+    content: '|';
     padding-left: 5px;
 }
 
-.wrapper {
+
+
+.wrapper{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 0.7rem;
     margin: 1rem 2rem;
 }
-.filter {
+.filter{
     padding: 5px 10px;
     border-radius: 25px;
     box-shadow: 1px 1px 1px rgb(179, 179, 179);
     border: 1px solid #dfdfdf;
 }
-.main-wrapper {
+.main-wrapper{
     display: flex;
     padding: 1rem 2rem;
     height: 80.8dvh;
 }
-.left {
+.left{
     width: 60%;
     overflow-y: auto;
 }
-.left::-webkit-scrollbar {
+.left::-webkit-scrollbar{
     display: none;
 }
-.desc {
+.desc{
     display: flex;
     flex-direction: column;
     gap: 2.7rem;
@@ -90,21 +91,21 @@ li {
     position: relative;
     width: 100%;
 }
-.card {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgb(192, 192, 192);
+.card{
+    padding-bottom: 1rem; 
+    border-bottom: 1px solid rgb(192, 192, 192); 
     margin-bottom: 1rem;
     display: flex;
     gap: 1rem;
 }
-.img {
+.img{
     position: relative;
 }
-.img > img {
+.img > img{
     width: 300px;
     height: 200px;
 }
-.distance {
+.distance{
     position: absolute;
     top: -7.5px;
     left: 20%;
@@ -114,31 +115,28 @@ li {
     background-color: black;
     color: white;
 }
-.title,
-.first {
+.title,.first{
     margin-bottom: 0.75rem;
 }
-.rating-desc,
-.first,
-.sec {
+.rating-desc,.first,.sec{
     display: flex;
     gap: 0.5rem;
 }
-.review-cont {
+.review-cont{
     display: flex;
     justify-content: space-between;
 }
-.fa-regular {
+.fa-regular{
     position: absolute;
     top: 0;
     right: 0;
     color: black;
 }
-.right {
+.right{
     width: 42%;
     margin-left: 1rem;
 }
 #map {
     width: 100%;
     height: 100%;
-}
+  }

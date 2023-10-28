@@ -81,6 +81,28 @@ async function getRoomDetails() {
     }
     
 }
+// getRoomDetails();
+
+
+// Creating a map object
+ var map = L.map('map').setView([result.lat, result.lng], 13);
+mapLink =
+  '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+L.tileLayer(
+  'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; ' + mapLink + ' Contributors',
+    maxZoom: 18,
+  }).addTo(map);
+
+ 
+ // Creating a Layer object
+ var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+ map.addLayer(layer);         // Adding layer to the map
+ var marker = L.marker([result.lat, result.lng]);    // Creating a Marker
+ 
+ // Adding popup to the marker
+ marker.bindPopup('You will be exactly here').openPopup().addTo(map);
+ marker.addTo(map); // Adding marker to the map
 
   
 

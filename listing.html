@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="airbnb.svg">
     <title>airbnb Rooms</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
     <link rel="stylesheet" href="./css_file/listing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav>
@@ -92,7 +94,7 @@
                 </div>
             </div>
             <div class="host-img">
-               <img class="host" src="./assets/villa.jpg" alt="host"> 
+               <img class="host" src="https://a0.muscache.com/im/pictures/user/79cccbaa-3258-4379-b98d-a642587d63e7.jpg" alt="host"> 
             </div>
         </div>
 
@@ -125,8 +127,7 @@
                     <div class="title">Free cancellation before Feb 14</div>
                   </div>
                 </div>
-              </div>
-              
+            </div> 
         </div>
 
         <div class="amenities">
@@ -206,7 +207,7 @@
             <div class="host-cont">
                 <div class="host-header">
                         <div class="host-img">
-                            <img class="host" src="./assets/villa.jpg" alt="host"> 
+                            <img class="host" src="https://a0.muscache.com/im/pictures/user/79cccbaa-3258-4379-b98d-a642587d63e7.jpg" alt="host"> 
                         </div>
                       <div class="title-subtitle">
                         <div class="title">Hosted by Ghazal</div>
@@ -228,7 +229,7 @@
                       </div>
                     </div>
                   </div>                  
-            </div>
+            <!-- </div> -->
             <div class="description">
                 <div style="font-size: 1.2rem; font-weight: 600; margin-top: 2rem;">Ghazal is a Superhost</div>
                 <div>
@@ -250,11 +251,9 @@
                       To protect your payment, never transfer money or communicate outside of the
                       Airbnb website or app.
                     </p>
-                  </div>
-                  
+                </div> 
             </div>
         </div>
-          
     </div>
     <div class="main-right">
         <div class="booking-box">
@@ -272,36 +271,7 @@
             </div>
             <button class="button">
                 Reserve
-            </button>
-            <div style="text-align: center; margin-bottom: 1rem;" class="you-won-t-be-charged-yet">You won’t be charged yet</div>
-            <div class="price-details">
-              <!-- <div class="row2">
-                <div class="tot-night">$79 x 7 nights</div>
-                <div class="tot-night-price">$555</div>
-              </div>
-              <div class="row2">
-                <div class="weekly-discount">Weekly discount</div>
-                <div class="weekly-discount-price">-$28</div>
-              </div>
-              <div class="row2">
-                <div class="cleaning-fee">Cleaning fee</div>
-                <div>$62</div>
-              </div>
-              <div class="row2">
-                <div class="service-fee">Service fee</div>
-                <div>$83</div>
-              </div>
-              <div class="row2">
-                <div class="occupancy-taxes-and-fees">Occupancy taxes and fees</div>
-                <div>$29</div>
-              </div>
-            </div> -->
-            <!-- <div class="row2">
-              <div class="total">Total</div>
-              <div id="tot">$701</div>
-            </div>
-          </div> -->
-          
+            </button>        
     </div>
 
    </main> 
@@ -384,6 +354,7 @@
         </div>
     </div>
 </footer>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <script src="./js_file/listing.js"></script>
 </body>
 </html>

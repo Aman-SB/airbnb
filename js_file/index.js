@@ -56,6 +56,7 @@ async function searchListings(loc,checkIn,checkOut,guest){
       const response = await fetch(url, options);
       const result = await response.text();
       console.log(result);
+      // to remove additional data 
       if(localStorage.getItem("data")){
         localStorage.removeItem("data");
       }
